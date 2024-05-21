@@ -1,0 +1,12 @@
+C:\Users\A\source\repos\BazzarApp\00.FrameWork\Framework.Tools\bin\Debug\net5.0\Framework.Tools.deps.json
+C:\Users\A\source\repos\BazzarApp\00.FrameWork\Framework.Tools\bin\Debug\net5.0\Framework.Tools.dll
+C:\Users\A\source\repos\BazzarApp\00.FrameWork\Framework.Tools\bin\Debug\net5.0\Framework.Tools.pdb
+C:\Users\A\source\repos\BazzarApp\00.FrameWork\Framework.Tools\obj\Debug\net5.0\Framework.Tools.csproj.AssemblyReference.cache
+C:\Users\A\source\repos\BazzarApp\00.FrameWork\Framework.Tools\obj\Debug\net5.0\Framework.Tools.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\A\source\repos\BazzarApp\00.FrameWork\Framework.Tools\obj\Debug\net5.0\Framework.Tools.AssemblyInfoInputs.cache
+C:\Users\A\source\repos\BazzarApp\00.FrameWork\Framework.Tools\obj\Debug\net5.0\Framework.Tools.AssemblyInfo.cs
+C:\Users\A\source\repos\BazzarApp\00.FrameWork\Framework.Tools\obj\Debug\net5.0\Framework.Tools.csproj.CoreCompileInputs.cache
+C:\Users\A\source\repos\BazzarApp\00.FrameWork\Framework.Tools\obj\Debug\net5.0\Framework.Tools.dll
+C:\Users\A\source\repos\BazzarApp\00.FrameWork\Framework.Tools\obj\Debug\net5.0\refint\Framework.Tools.dll
+C:\Users\A\source\repos\BazzarApp\00.FrameWork\Framework.Tools\obj\Debug\net5.0\Framework.Tools.pdb
+C:\Users\A\source\repos\BazzarApp\00.FrameWork\Framework.Tools\obj\Debug\net5.0\ref\Framework.Tools.dll
