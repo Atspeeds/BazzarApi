@@ -13,3 +13,4 @@ namespace Bazzar.Core.Domain.Advertisements.Entitys
         [Description("فروخته شده")]
         Sold = 4
     }
+}

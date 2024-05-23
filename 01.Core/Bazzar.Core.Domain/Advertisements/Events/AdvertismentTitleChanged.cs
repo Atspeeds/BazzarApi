@@ -8,4 +8,5 @@ namespace Bazzar.Core.Domain.Advertisements.Events
         public Guid Id { get; set; }
         public string Title { get; set; }
     }
+
 }

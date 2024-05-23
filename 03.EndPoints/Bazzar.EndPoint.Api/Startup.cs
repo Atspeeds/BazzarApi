@@ -1,7 +1,13 @@
+using Bazzar.Core.ApplicationService.Advertisements.CommadnHandlers;
+using Bazzar.Core.Domain.Advertisements.Data;
+using Bazzar.Infrastructures.Data.Sql;
+using Bazzar.Infrastructures.Data.Sql.Advertisments;
+using Framework.Domain.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -28,10 +34,19 @@ namespace Bazzar.EndPoint.Api
         {
 
             services.AddControllers();
+            services.AddScoped<IAdvertisementRepository, EfAdvertisementsRepository>();
+            services.AddScoped<IUnitOfWork, AdvertisementsUnitOfWork>();
+            services.AddDbContext<AdvertisementsDbContext>(c => c.UseSqlServer(Configuration.GetConnectionString("AddvertismentCnn")));
+            services.AddScoped<CreateHandler>();
+            services.AddScoped<SetTitleHandler>();
+            services.AddScoped<UpdateTextHandler>();
+            services.AddScoped<UpdatePriceHandler>();
+            services.AddScoped<RequestToPublishHandler>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Bazzar.EndPoint.Api", Version = "v1" });
             });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -11,13 +11,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.Infrastructure", "02.Inf
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.EndPoints", "03.EndPoints", "{437A6F4E-F654-415C-8905-6157F8A014A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bazzar.Core.Domain", "01.Core\Bazzar.Core.Domain\Bazzar.Core.Domain.csproj", "{70E2698B-EA00-4924-ACAB-023A80D4CF0B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bazzar.Core.Domain", "01.Core\Bazzar.Core.Domain\Bazzar.Core.Domain.csproj", "{70E2698B-EA00-4924-ACAB-023A80D4CF0B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Domain", "00.FrameWork\Framework.Domain\Framework.Domain.csproj", "{FE707F55-4685-47BF-B885-2879F12A567C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Framework.Domain", "00.FrameWork\Framework.Domain\Framework.Domain.csproj", "{FE707F55-4685-47BF-B885-2879F12A567C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bazzar.EndPoint.Api", "03.EndPoints\Bazzar.EndPoint.Api\Bazzar.EndPoint.Api.csproj", "{C64CE079-C4D4-42ED-AF14-2A7CB2C392AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bazzar.EndPoint.Api", "03.EndPoints\Bazzar.EndPoint.Api\Bazzar.EndPoint.Api.csproj", "{C64CE079-C4D4-42ED-AF14-2A7CB2C392AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Tools", "00.FrameWork\Framework.Tools\Framework.Tools.csproj", "{9208455B-44C9-459A-997F-80E1DBE892DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Framework.Tools", "00.FrameWork\Framework.Tools\Framework.Tools.csproj", "{9208455B-44C9-459A-997F-80E1DBE892DA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bazzar.Core.ApplicationService", "01.Core\Bazzar.Core.ApplicationService\Bazzar.Core.ApplicationService.csproj", "{1FB93F2F-EADD-4340-89ED-428605C33493}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bazzar.Infrastructures.Data.Fake", "02.Infrastructure\Bazzar.Infrastructures.Data.Fake\Bazzar.Infrastructures.Data.Fake.csproj", "{D5EF85F3-4AD8-4332-B1ED-DCA4DF0802E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bazzar.Infrastructures.Data.Sql", "Bazzar.Infrastructures.Data.Sql\Bazzar.Infrastructures.Data.Sql.csproj", "{FED3DABB-655A-4895-B43D-51EDC0DEC270}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +47,18 @@ Global
 		{9208455B-44C9-459A-997F-80E1DBE892DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9208455B-44C9-459A-997F-80E1DBE892DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9208455B-44C9-459A-997F-80E1DBE892DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FB93F2F-EADD-4340-89ED-428605C33493}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FB93F2F-EADD-4340-89ED-428605C33493}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FB93F2F-EADD-4340-89ED-428605C33493}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FB93F2F-EADD-4340-89ED-428605C33493}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5EF85F3-4AD8-4332-B1ED-DCA4DF0802E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5EF85F3-4AD8-4332-B1ED-DCA4DF0802E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5EF85F3-4AD8-4332-B1ED-DCA4DF0802E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5EF85F3-4AD8-4332-B1ED-DCA4DF0802E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FED3DABB-655A-4895-B43D-51EDC0DEC270}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FED3DABB-655A-4895-B43D-51EDC0DEC270}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FED3DABB-655A-4895-B43D-51EDC0DEC270}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FED3DABB-655A-4895-B43D-51EDC0DEC270}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +68,9 @@ Global
 		{FE707F55-4685-47BF-B885-2879F12A567C} = {41BCADFB-F2AA-4AE7-B952-BE58611430A6}
 		{C64CE079-C4D4-42ED-AF14-2A7CB2C392AD} = {437A6F4E-F654-415C-8905-6157F8A014A7}
 		{9208455B-44C9-459A-997F-80E1DBE892DA} = {41BCADFB-F2AA-4AE7-B952-BE58611430A6}
+		{1FB93F2F-EADD-4340-89ED-428605C33493} = {30F2D957-2A5A-423B-B453-FE5A24E8D2FB}
+		{D5EF85F3-4AD8-4332-B1ED-DCA4DF0802E8} = {FCD056EC-3A35-48C6-B615-A66E00F5AF0A}
+		{FED3DABB-655A-4895-B43D-51EDC0DEC270} = {FCD056EC-3A35-48C6-B615-A66E00F5AF0A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0C5741B8-DF8F-4775-A07F-E91F18A7F4B0}

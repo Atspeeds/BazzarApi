@@ -5,7 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\01.Core\Bazzar.Core.ApplicationService\Bazzar.Core.ApplicationService.csproj" />
+    <ProjectReference Include="..\..\01.Core\Bazzar.Core.Domain\Bazzar.Core.Domain.csproj" />
+    <ProjectReference Include="..\..\Bazzar.Infrastructures.Data.Sql\Bazzar.Infrastructures.Data.Sql.csproj" />
   </ItemGroup>
 
 </Project>

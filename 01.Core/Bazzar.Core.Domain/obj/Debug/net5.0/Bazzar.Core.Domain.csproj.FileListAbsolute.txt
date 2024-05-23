@@ -1,0 +1,17 @@
+C:\Users\A\source\repos\BazzarApp\01.Core\Bazzar.Core.Domain\obj\Debug\net5.0\Bazzar.Core.Domain.csproj.AssemblyReference.cache
+C:\Users\A\source\repos\BazzarApp\01.Core\Bazzar.Core.Domain\obj\Debug\net5.0\Bazzar.Core.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\A\source\repos\BazzarApp\01.Core\Bazzar.Core.Domain\obj\Debug\net5.0\Bazzar.Core.Domain.AssemblyInfoInputs.cache
+C:\Users\A\source\repos\BazzarApp\01.Core\Bazzar.Core.Domain\obj\Debug\net5.0\Bazzar.Core.Domain.AssemblyInfo.cs
+C:\Users\A\source\repos\BazzarApp\01.Core\Bazzar.Core.Domain\obj\Debug\net5.0\Bazzar.Core.Domain.csproj.CoreCompileInputs.cache
+C:\Users\A\source\repos\BazzarApp\01.Core\Bazzar.Core.Domain\bin\Debug\net5.0\Bazzar.Core.Domain.deps.json
+C:\Users\A\source\repos\BazzarApp\01.Core\Bazzar.Core.Domain\bin\Debug\net5.0\Bazzar.Core.Domain.dll
+C:\Users\A\source\repos\BazzarApp\01.Core\Bazzar.Core.Domain\bin\Debug\net5.0\Bazzar.Core.Domain.pdb
+C:\Users\A\source\repos\BazzarApp\01.Core\Bazzar.Core.Domain\bin\Debug\net5.0\Framework.Domain.dll
+C:\Users\A\source\repos\BazzarApp\01.Core\Bazzar.Core.Domain\bin\Debug\net5.0\Framework.Tools.dll
+C:\Users\A\source\repos\BazzarApp\01.Core\Bazzar.Core.Domain\bin\Debug\net5.0\Framework.Domain.pdb
+C:\Users\A\source\repos\BazzarApp\01.Core\Bazzar.Core.Domain\bin\Debug\net5.0\Framework.Tools.pdb
+C:\Users\A\source\repos\BazzarApp\01.Core\Bazzar.Core.Domain\obj\Debug\net5.0\Bazzar.Core.Domain.csproj.CopyComplete
+C:\Users\A\source\repos\BazzarApp\01.Core\Bazzar.Core.Domain\obj\Debug\net5.0\Bazzar.Core.Domain.dll
+C:\Users\A\source\repos\BazzarApp\01.Core\Bazzar.Core.Domain\obj\Debug\net5.0\refint\Bazzar.Core.Domain.dll
+C:\Users\A\source\repos\BazzarApp\01.Core\Bazzar.Core.Domain\obj\Debug\net5.0\Bazzar.Core.Domain.pdb
+C:\Users\A\source\repos\BazzarApp\01.Core\Bazzar.Core.Domain\obj\Debug\net5.0\ref\Bazzar.Core.Domain.dll

@@ -5,10 +5,12 @@ using Framework.Domain.Entitys;
 using Bazzar.Core.Domain.Advertisements.Events;
 using Framework.Tools.Enums;
 using Framework.Domain.Exceptions;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Bazzar.Core.Domain.Advertisements.Entitys
 {
-    public class Advertisment : BaseEntity<Guid>
+    public class Advertisment : BaseAggregateRoot<Guid>
     {
 
         #region Fields    
@@ -18,50 +20,78 @@ namespace Bazzar.Core.Domain.Advertisements.Entitys
         public AdvertismentText Text { get; protected set; }
         public Price Price { get; protected set; }
         public AdvertismentState State { get; protected set; }
+        public List<Picture> Pictures { get; private set; }
         #endregion
-
         private Advertisment()
         {
 
         }
-
-        #region Event
-        public Advertisment(Guid id, UserId ownerId) =>
+        public Advertisment(Guid id, UserId ownerId)
+        {
+            Pictures = new List<Picture>();
             HandleEvent(new AdvertismentCreated
             {
                 Id = id,
                 OwnerId = ownerId.Value
             });
+        }
+        public void SetTitle(AdvertismentTitle title)
+        {
 
-
-        public void SetTitle(AdvertismentTitle title) =>
             HandleEvent(new AdvertismentTitleChanged
             {
                 Id = Id,
                 Title = title.Value
             });
-        public void UpdateText(AdvertismentText text) =>
+        }
+
+        public void UpdateText(AdvertismentText text)
+        {
+
             HandleEvent(new AdvertismentTextUpdated
             {
                 Id = Id,
                 AdvertismentText = text.Value
             });
+        }
+        public void UpdatePrice(Price price)
+        {
 
-        public void UpdatePrice(Price price) =>
             HandleEvent(new AdvertismentPriceUpdated
             {
                 Id = Id,
                 Price = price.Value.Value
             });
-
-        public void RequestToPublish() =>
+        }
+        public void RequestToPublish()
+        {
             HandleEvent(new AdvertismentSentForReview
             {
                 Id = Id
             });
-
-        #endregion
-
+        }
+        public void AddPicture(Uri pictureUri, PictureSize size)
+        {
+            var newPic = new Picture(HandleEvent);
+            newPic.HandleEvent(new PictureAddedToAdvertisment
+            {
+                PictureId = new Guid(),
+                ClassifiedAdId = Id,
+                Url = pictureUri.ToString(),
+                Height = size.Height,
+                Width = size.Width
+            });
+            Pictures.Add(newPic);
+        }
+        public void ResizePicture(Guid pictureId, PictureSize newSize)
+        {
+            var picture = FindPicture(pictureId);
+            if (picture == null)
+                throw new InvalidOperationException(
+                "تصویری با شناسه وارد شده وجود برای تغییر سایز وجود ندارد");
+            picture.Resize(newSize);
+        }
+        private Picture FindPicture(Guid id) => Pictures.FirstOrDefault(x => x.Id == id);
         protected override void ValidateInvariants()
         {
             var isValid =
