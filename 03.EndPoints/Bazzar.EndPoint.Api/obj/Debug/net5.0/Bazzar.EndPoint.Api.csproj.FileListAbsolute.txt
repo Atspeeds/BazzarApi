@@ -54,7 +54,6 @@ C:\Users\A\source\repos\BazzarApp\03.EndPoints\Bazzar.EndPoint.Api\bin\Debug\net
 C:\Users\A\source\repos\BazzarApp\03.EndPoints\Bazzar.EndPoint.Api\bin\Debug\net5.0\Bazzar.Infrastructures.Data.Sql.pdb
 C:\Users\A\source\repos\BazzarApp\03.EndPoints\Bazzar.EndPoint.Api\bin\Debug\net5.0\Framework.Domain.pdb
 C:\Users\A\source\repos\BazzarApp\03.EndPoints\Bazzar.EndPoint.Api\bin\Debug\net5.0\Framework.Tools.pdb
-C:\Users\A\source\repos\BazzarApp\03.EndPoints\Bazzar.EndPoint.Api\obj\Debug\net5.0\Bazzar.EndPoint.Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\A\source\repos\BazzarApp\03.EndPoints\Bazzar.EndPoint.Api\obj\Debug\net5.0\scopedcss\bundle\Bazzar.EndPoint.Api.styles.css
 C:\Users\A\source\repos\BazzarApp\03.EndPoints\Bazzar.EndPoint.Api\obj\Debug\net5.0\staticwebassets\Bazzar.EndPoint.Api.StaticWebAssets.Manifest.cache
 C:\Users\A\source\repos\BazzarApp\03.EndPoints\Bazzar.EndPoint.Api\obj\Debug\net5.0\staticwebassets\Bazzar.EndPoint.Api.StaticWebAssets.Pack.cache

@@ -1,4 +1,5 @@
 ﻿using Bazzar.Core.Domain.Advertisements.Entitys;
+using Bazzar.Core.Domain.UserProfiles.Entities;
 using Bazzar.Infrastructures.Data.Sql.Advertisments;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -17,6 +18,7 @@ namespace Bazzar.Infrastructures.Data.Sql
 
         #region Table Entitys
         public DbSet<Advertisment> Advertisments { get; set; }
+        public DbSet<UserProfile> UserProfiles { get; set; }
         #endregion
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
